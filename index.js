@@ -15,10 +15,9 @@ playerImage.src = "./img/playerDown.png";
 
 function animate() {
   window.requestAnimationFrame(animate);
-  //   c.drawImage(image, 0, 0);
   c.drawImage(
     image,
-    60, // source x
+    -50, // source x
     -70, // source y
     image.width * 2, // source width
     image.height * 2 // source height
@@ -31,7 +30,7 @@ function animate() {
     0, // source y
     playerImage.width / 4, // source width
     playerImage.height * 1.8, // source height
-    canvas.width / 2 - playerImage.width / 4, // destination x
+    canvas.width / 2.4 - (playerImage.width / 4), // destination x
     canvas.height / 2 - playerImage.height / 2, // destination y
     playerImage.width / 7.05, // destination width
     playerImage.height // destination height
