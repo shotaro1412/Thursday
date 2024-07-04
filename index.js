@@ -18,8 +18,8 @@ function animate() {
   //   c.drawImage(image, 0, 0);
   c.drawImage(
     image,
-    -70, // source x
-    -50, // source y
+    60, // source x
+    -70, // source y
     image.width * 2, // source width
     image.height * 2 // source height
     // destination y
@@ -29,11 +29,11 @@ function animate() {
     playerImage,
     0, // source x
     0, // source y
-    playerImage.width * 2.7, // source width
-    playerImage.height * 2.7, // source height
-    canvas.width / 3.3 - playerImage.width / 4 / 2, // destination x
+    playerImage.width / 4, // source width
+    playerImage.height * 1.8, // source height
+    canvas.width / 2 - playerImage.width / 4, // destination x
     canvas.height / 2 - playerImage.height / 2, // destination y
-    playerImage.width, // destination width
+    playerImage.width / 7.05, // destination width
     playerImage.height // destination height
   );
 }
